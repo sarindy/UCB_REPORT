@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<ConnConfig>
+	<!-- Provide the DB Type for the DB Name e.g oracle or SQL server -->
+
+	<DBType>
+		<dbName>SQLServerDB</dbName>
+	</DBType>
+	<OracleDB>
+		<dbDriverName>oracle.jdbc.driver.OracleDriver</dbDriverName>
+		<dbUser>ucb</dbUser>
+		<dbPassword>qwe</dbPassword>
+		<dbURI>jdbc:oracle:thin:@10.178.:1521:db1</dbURI>
+	</OracleDB>
+	<!-- This is for connect to DB under Dormant -->
+	<SQLServerDB>
+		<dbDriverName>net.sourceforge.jtds.jdbc.Driver</dbDriverName>
+		<dbUser>SQL_ODS</dbUser>
+		<dbPassword>Ucb@1)2(</dbPassword>
+		<dbURI>jdbc:jtds:sqlserver://10.178.192.34:1433/ODS_UCB;useNTLMv2=true;domain=ucb.com.kh</dbURI>
+	</SQLServerDB>
+	<!-- This is for connect to DB Local -->
+	<SQLServerDB1>
+		<dbDriverName>com.microsoft.sqlserver.jdbc.SQLServerDriver</dbDriverName>
+		<dbUser>dy</dbUser>
+		<dbPassword>qwe</dbPassword>
+		<dbURI>jdbc:sqlserver://localhost;databaseName=MYODS</dbURI>
+	</SQLServerDB1>
+</ConnConfig>
